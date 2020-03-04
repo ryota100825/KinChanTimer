@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KinChanTimer</string>
+    <string name="Start">Start</string>
+    <string name="Reset">Reset</string>
+    <string name="threeMinutes">3分</string>
+    <string name="fiveMinutes">5分</string>
+</resources>

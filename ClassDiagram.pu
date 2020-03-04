@@ -1,0 +1,29 @@
+
+title タイマークラス図
+
++abstract CountDown {
+    +void notifyObservers();
+    +abstract void execute();
+}
+
++class ThreeMinutesCountDown {
+    +void execute();
+}
+
++class FiveMinutesCountDown {
+    +void execute();
+}
+
++interface Observer {
+    +abstract void update(CountDown counDown);
+}
+
++class PlaySoundObserver {
+    +void update(CountDown countDown);
+    -void playSound();
+}
+
+Observer <|.. PlaySoundObserver
+CountDown <|-- ThreeMinutesCountDown
+CountDown <|-- FiveMinutesCountDown
+CountDown *- Observer
